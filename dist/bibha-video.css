@@ -1,0 +1,258 @@
+/**
+ * Bibha video - Bibha video is a Javascript tool to easily create beautiful, simple, mobile-friendly, vertical timelines.
+ * @version v0.1.1
+ * @link https://github.com/datanews/bibha-video
+ * @license MIT
+ */
+.bibha-video-container {
+  position: relative;
+  width: 95%;
+  max-width: 70em;
+  margin: 0 auto 2em auto;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  color: #565656;
+  box-sizing: border-box;
+}
+.bibha-video-container.tt-bg-color,
+.bibha-video-container .tt-bg-color {
+  background-color: #ff6666;
+}
+.bibha-video-container div,
+.bibha-video-container span,
+.bibha-video-container section {
+  box-sizing: border-box;
+}
+.bibha-video-container .cf:before,
+.bibha-video-container .cf:after {
+  display: table;
+  content: " ";
+}
+.bibha-video-container .cf:after {
+  clear: both;
+}
+.bibha-video-container .cf {
+  *zoom: 1;
+}
+.bibha-video-container .tt-header {
+  position: relative;
+  z-index: 10;
+  padding-top: 1.5em;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.bibha-video-container .tt-header .tt-label {
+  margin-bottom: 1em;
+  font-size: 1.25em;
+}
+.bibha-video-container .tt-header .tt-title {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+.bibha-video-container .tt-header-color {
+  color: #ffffff;
+  background-color: #232323;
+}
+.bibha-video-container .tt-spine-color {
+  color: #232323;
+  background-color: #ffcc00;
+}
+.bibha-video-container .tt-spine-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.bibha-video-container .tt-spine-background .tt-spine {
+  top: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 4px;
+  height: 100%;
+}
+.bibha-video-container .tt-spine-end {
+  position: relative;
+  padding: 0;
+  line-height: 0.5em;
+  text-align: center;
+}
+.bibha-video-container .tt-spine-end .tt-spine-point {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+}
+.bibha-video-container .tt-spine-end .tt-spine {
+  display: inline-block;
+  width: 4px;
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
+.bibha-video-container .tt-spine-end.tt-spine-top {
+  padding-top: 2em;
+}
+.bibha-video-container .tt-spine-end.tt-spine-top .tt-spine-point {
+  margin-bottom: -1px;
+}
+.bibha-video-container .tt-spine-end.tt-spine-bottom {
+  padding-bottom: 2em;
+}
+.bibha-video-container .tt-groups {
+  position: relative;
+  z-index: 10;
+  padding-top: 1em;
+}
+.bibha-video-container .tt-group .tt-group-label-wrapper {
+  text-align: center;
+}
+.bibha-video-container .tt-group .tt-group-label {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 0 auto 1em auto;
+}
+.bibha-video-container .tt-entries {
+  padding: 0 1em 1em 1em;
+  margin-bottom: 1em;
+}
+.bibha-video-container .tt-entry {
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #ffffff;
+}
+.bibha-video-container .tt-entry .tt-entry-date {
+  margin-bottom: 1em;
+  font-size: 0.85em;
+  color: #ff6666;
+  text-transform: uppercase;
+}
+.bibha-video-container .tt-entry .tt-entry-link {
+  display: block;
+  float: right;
+  padding: 1em 1em;
+  margin-top: -1.17647059em;
+  margin-right: -1.17647059em;
+  font-size: 0.85em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: lowercase;
+  background-color: #e51133;
+}
+.bibha-video-container .tt-entry .tt-entry-link:hover {
+  text-decoration: underline;
+}
+.bibha-video-container .tt-entry .tt-entry-title {
+  padding: 0;
+  margin: 0 0 0.75em 0;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+.bibha-video-container .tt-entry .tt-entry-media-wrapper.with-body {
+  margin-bottom: 1em;
+}
+.bibha-video-container .tt-entry .tt-entry-media {
+  margin: 0 -1em 0 -1em;
+}
+.bibha-video-container .tt-entry .tt-entry-media.with-source {
+  margin-bottom: 0.5em;
+}
+.bibha-video-container .tt-entry .tt-entry-media img {
+  max-width: 100%;
+}
+.bibha-video-container .tt-entry .tt-entry-source {
+  font-family: Georgia, serif;
+  font-size: 0.85em;
+  color: #8b8b8b;
+}
+.bibha-video-container .tt-entry .tt-entry-body {
+  margin-bottom: 0;
+  font-family: Georgia, serif;
+}
+.bibha-video-container .tt-entry .tt-entry-body a,
+.bibha-video-container .tt-entry .tt-entry-source a {
+  color: #e51133;
+  text-decoration: none;
+}
+.bibha-video-container .tt-entry .tt-entry-body a:hover,
+.bibha-video-container .tt-entry .tt-entry-source a:hover {
+  text-decoration: underline;
+}
+.bibha-video-container .tt-entry .tt-entry-body code,
+.bibha-video-container .tt-entry .tt-entry-source code {
+  padding: 0.15em 0.25em;
+  font-family: monospace;
+  background-color: #ECECEC;
+}
+.bibha-video-container .tt-entry .tt-entry-body code.code-block,
+.bibha-video-container .tt-entry .tt-entry-source code.code-block {
+  display: block;
+  max-height: 15em;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  overflow: scroll;
+}
+.bibha-video-container .tt-entry .tt-entry-body abbr,
+.bibha-video-container .tt-entry .tt-entry-source abbr {
+  cursor: help;
+  border-bottom: 1px dashed #ECECEC;
+}
+.bibha-video-container .tt-entry .tt-entry-body > *:first-child,
+.bibha-video-container .tt-entry .tt-entry-source > *:first-child {
+  margin-top: 0;
+}
+.bibha-video-container .tt-entry .tt-entry-body > *:last-child,
+.bibha-video-container .tt-entry .tt-entry-source > *:last-child,
+.bibha-video-container .tt-entry .tt-entry-body > *.code-block:last-child,
+.bibha-video-container .tt-entry .tt-entry-source > *.code-block:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 600px) {
+  .bibha-video-container .tt-entry .tt-entry-media-wrapper.with-body,
+  .bibha-video-container .tt-entry .tt-entry-body-wrapper.with-media {
+    width: 50%;
+    float: right;
+  }
+  .bibha-video-container .tt-entry .tt-entry-media-wrapper.with-body {
+    margin-bottom: 0;
+    padding-left: 1em;
+  }
+  .bibha-video-container .tt-entry .tt-entry-media-wrapper.with-body .tt-entry-media {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .bibha-video-container .tt-entry .tt-entry-body-wrapper.with-media {
+    padding-right: 1em;
+  }
+  .bibha-video-container .tt-entry .tt-entry-source {
+    margin-bottom: 0;
+  }
+}
+.bibha-video-container .tt-progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 0;
+  background-color: #565656;
+  -webkit-transition: height 200ms linear;
+          transition: height 200ms linear;
+}
+.bibha-video-container .tt-progress-bar.enabled {
+  height: 0.5em;
+}
+.bibha-video-container .tt-progress-bar .tt-progress {
+  position: relative;
+  width: 0;
+  height: 100%;
+  background-color: #ffcc00;
+  -webkit-transition: width 200ms linear;
+          transition: width 200ms linear;
+}

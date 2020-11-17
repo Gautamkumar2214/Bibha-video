@@ -1,0 +1,48 @@
+	
+name	"bibha-video"
+version	"0.1.1"
+homepage	"https://github.com/datanews/bibha-video"
+description	"bibha video is a Javascript tool to easily create beautiful, simple, mobile-friendly, vertical timelines."
+authors	
+0	
+name	"Alan Palazzolo"
+email	"apalzzolo@wnyc.org"
+url	"http://wnyc.org"
+1	
+name	"Noah Veltman"
+email	"nveltman@wnyc.org"
+url	"http://wnyc.org"
+2	
+name	"Chris Keller"
+email	"ckeller@scpr.org"
+url	"http://scpr.org"
+3	
+name	"John Keefe"
+email	"jkeefe@wnyc.org"
+url	"http://wnyc.org"
+main	"dist/bibha-video.js"
+moduleType	
+0	"amd"
+1	"globals"
+2	"node"
+keywords	
+0	"timeline"
+license	"MIT"
+ignore	
+0	"**/.*"
+1	"node_modules"
+2	"bower_components"
+3	"test"
+4	"tests"
+5	"examples"
+6	"index.html"
+dependencies	
+underscore	"~1.8.3"
+moment	"~2.10.2"
+devDependencies	
+tabletop	"~1.4.2"
+mocha	"~2.2.5"
+chai	"~3.0.0"
+highlightjs	"~8.6.0"
+jquery	"1.x"
+mustache.js	"~2.1.3"
